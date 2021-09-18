@@ -1,0 +1,44 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  .container 
+    a.navbar-brand(href='index.html') 
+      img(src="./assets/image/twasalLogo.png", alt="") 
+      h5.text تواصل آل باحطاب
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li(class = pageTitl === "Home" ? "nav-item  active" : " nav-item " )
+          a.nav-link(href='index.html')
+            | الرئيسية 
+            span.sr-only (current)
+        //- li(class = pageTitl === "Blog" ? "nav-item  active" : " nav-item " )
+        //-   a.nav-link(href='blog.html') المدونة
+        
+        //- li(class = pageTitl === "Register" ? "nav-item  active" : " nav-item " )
+        //-   a.nav-link.sunup(href='register.html') تسجيل طلب انضمام
+        //- li(class = pageTitl === "Login" ? "nav-item  active" : " nav-item " )
+        //-   a.nav-link(href='login.html') دخول
+        
+        li(class = pageTitl === "Homes" ? "nav-item  active" : " nav-item " )
+          a.nav-link(href='#') شجرة العائلة  
+        li(class = pageTitl === "Home" ? "nav-item  active" : " nav-item " )
+          a.nav-link(href='#') طلب مساعدة
+        //- li(class = pageTitl === "Home" ? "nav-item  active" : " nav-item " )
+        //-   a.nav-link(href='#') لوحة التحكم
+        li(class = pageTitl === "Homes" ? "nav-item  active" : " nav-item " )
+          a.nav-link( data-toggle='modal', data-target='#notificationModal') 
+            i.far.fa-bell.fa-fw.fa-lg
+            span.notification 
+        li(class = pageTitl === "Homes" ? "nav-item  active" : " nav-item " )
+          a.nav-link(href='#') 
+            img(src="./assets/image/Ellipse.png", alt="")
+
+        
+        
+      //- form.form-inline.my-2.my-lg-0
+      //-   input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
+      //-   button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+
+
+
+

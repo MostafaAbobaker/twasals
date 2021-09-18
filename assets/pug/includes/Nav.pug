@@ -1,0 +1,37 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  .container 
+    a.navbar-brand(href='blog.html') 
+      img(src="./assets/image/twasalLogo.png", alt="") 
+      h5.text تواصل آل باحطاب
+    ul.navbar-nav.ml-auto
+      li(class = pageTitl === "Home" ? "nav-item  active" : " nav-item " )
+        a.nav-link(href='blog.html')
+          span.icon 
+            i.fas.fa-home.fa-fw.fa-lg
+          span.text الرئيسية
+
+
+      
+      li(class = pageTitl === "Tree" ? "nav-item  active" : " nav-item " )
+        a.nav-link(href='tree.html') 
+          span.icon 
+            i.fas.fa-tree.fa-fw.fa-lg  
+          span.text شجرة العائلة
+      li(class = pageTitl === "Help" ? "nav-item  active" : " nav-item " )
+        a.nav-link(href='help.html') 
+          span.icon 
+            i.fas.fa-hands-helping.fa-fw.fa-lg  
+          span.text طلب مساعدة
+      li(class = pageTitl === "Homes" ? "nav-item  active" : " nav-item " )
+        a.nav-link( data-toggle='modal', data-target='#notificationModal') 
+          i.far.fa-bell.fa-fw.fa-lg
+          span.notification 
+      li(class = pageTitl === "User" ? "nav-item  active" : " nav-item " )
+        a.nav-link(href='user.html') 
+          //img(src="./assets/image/Ellipse.png", alt="")
+          i.fas.fa-user.fa-fw.fa-lg
+
+
+
+
+

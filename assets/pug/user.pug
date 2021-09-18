@@ -1,0 +1,389 @@
+- var pageTitl = "User";
+doctype html
+html(lang="ar")
+  head
+    include includes/head.pug
+  body 
+    include includes/Nav.pug
+    .user-page 
+      .container 
+        .row 
+          .col-lg-3.col-md-12.col-sm-12
+            .user-info 
+              .image-upload
+                .avatar-upload
+                  .avatar-edit
+                    input#imageUpload(type='file', accept='.png, .jpg, .jpeg')
+                    label(for='imageUpload')
+                  .avatar-preview
+                    #imagePreview(style='background-image: url(./assets/image/Ellipse7.png);') 
+              h4.text-center محمد بن عمر محمد
+              h5.text-center مدير مالى
+              ul.list-unstyled
+                li
+                  img(src="./assets/image/husband.png", alt="")
+                  span.text 2 زوجة
+                li
+                  img(src="./assets/image/children.png", alt="")
+                  span.text 6 ابناء
+              .groub-button 
+                a.btn.btn-primary(href="tree.html")   
+                  i.fas.fa-code-branch.fa-fw.fa-lg
+                  | شجرة العائلة
+                a.btn.btn-outline-success(href="")   
+                  i.far.fa-envelope.fa-fw.fa-lg
+                  |  الوارد
+
+          .col-lg-9.col-md-12.col-sm-12 
+            ul#myTab.nav.nav-tabs(role='tablist')
+              li.nav-item(role='presentation')
+                a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true') البيانات الاساسية
+              li.nav-item(role='presentation')
+                a#profile-tab.nav-link(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false') معلومات عامة
+              li.nav-item(role='presentation')
+                a#contact-tab.nav-link(data-toggle='tab', href='#contact', role='tab', aria-controls='contact', aria-selected='false') الحالة الاجتماعية
+              li.nav-item(role='presentation')
+                a#scientific-tab.nav-link(data-toggle='tab', href='#scientific', role='tab', aria-controls='scientific', aria-selected='false') معلومات علمية
+            #myTabContent.tab-content
+              #home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab') 
+                .container-fliud 
+                  .row 
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') الاسم الاول 
+                        input#exampleInputEmail1.form-control(type='text', placeholder="محمد")
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') الاسم الثاني 
+                        input#exampleInputEmail1.form-control(type='text', placeholder="عمر")
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') الاسم الثالث 
+                        input#exampleInputEmail1.form-control(type='text', placeholder="محمد")
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') الاسم الرابع
+                        input#exampleInputEmail1.form-control(type='text', placeholder="عبدالله")
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1')   (رقم هوية) الام او الزوجة 
+                        input#exampleInputEmail1.form-control(type='text', )
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') اسم العائلة 
+                        input#exampleInputEmail1.form-control(type='text', placeholder="حطاب")
+                    .col-lg-6.col-md-6.col-sm-12 
+                       .form-group
+                        label(for='exampleInputEmail1') النوع الطلب
+                        .form-group
+                          .form-check.form-check-inline
+                            input#inlineRadio1.form-check-input(type='radio', name='inlineRadioOptions', value='option1', checked)
+                            label.form-check-label(for='inlineRadio1') باحطاب
+                          .form-check.form-check-inline
+                            input#inlineRadio2.form-check-input(type='radio', name='inlineRadioOptions', value='option2')
+                            label.form-check-label(for='inlineRadio2') اخرى
+                    .col-lg-6.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') النوع
+                        .form-group
+                          .form-check.form-check-inline
+                            input#Man.form-check-input(type='radio', name='Gender', value='options1' , checked)
+                            label.form-check-label(for='Man') ذكر
+                          .form-check.form-check-inline
+                            input#woman.form-check-input(type='radio', name='Gender', value='options2')
+                            label.form-check-label(for='woman') انثى
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') رقم الهوية  
+                        input#exampleInputEmail1.form-control(type='text', placeholder="0142365")
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') الكنية  
+                        input#exampleInputEmail1.form-control(type='text', placeholder=" ابو جعفر")
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group.form-date-group
+                        label(for='exampleInputEmail1') تاريخ الميلاد
+                        input#exampleInputEmail1.form-control.form-date-control(type='date', )
+                    .col-lg-12.col-md-12.col-sm-12.d-flex.justify-content-end
+                      a.btn-master-outline(href="blog.html") حفظ البيانات
+
+              #profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab') 
+                .container-fliud 
+                  .row
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') بلد الإقامة
+                        select#exampleFormControlSelect1.form-control
+                          option المملكة العربيه السعودية
+                          option الإمارات العربية المتحدة
+                          option الكويت‎
+                          option البحرين
+                          option الأردن
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') المدينة
+                        select#exampleFormControlSelect1.form-control
+                          option جدة
+                          option الرياض
+                          option الدمام 
+                          option القصيم
+                          option المدينة
+                    
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') الجنسية
+                        select#exampleFormControlSelect1.form-control
+                          option سعودى
+                          option امراتى 
+                          option 3
+                          option 4
+                          option 5
+
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') رقم الجوال
+                        input#exampleInputEmail1.form-control(type='text', placeholder="0112 1245 214")   
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') البريد الالكتروني
+                        input#exampleInputEmail1.form-control(type='text', placeholder="Mohamed@gmail.com")
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') الحالة
+                        .form-group
+                          .custom-control.custom-checkbox.form-group
+                            input#customControlAutosizingp3.custom-control-input(type='checkbox')
+                            label.custom-control-label(for='customControlAutosizingp3') متوفى  
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group.form-date-group
+                        label(for='exampleInputEmail1') تاريخ الوفاه
+                        input#exampleInputEmail1.form-control.form-date-control(type='date', )
+                    .col-lg-8.col-md-12.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') العنوان 
+                        input#exampleInputEmail1.form-control(type='text', )
+                    .col-lg-12.col-md-12.col-sm-12.d-flex.justify-content-end
+                      a.btn-master-outline(href="blog.html") حفظ البيانات
+              #contact.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab') 
+                .container-fliud 
+                  .row
+                    .col-lg-12.col-md-12.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') الحالة الاجتماعية
+                        select#exampleFormControlSelect1.form-control
+                          option أعزب
+                          option متزوج
+                          option مطلق 
+                          option أرمل
+                    .col-lg-12.col-md-12.col-sm-12 
+                      ul#myTab.nav.nav-tabs(role='tablist')
+                        li.nav-item(role='presentation')
+                          a#wife-tab.nav-link.active(data-toggle='tab', href='#wife', role='tab', aria-controls='wife', aria-selected='true') زوجة
+                        li.nav-item(role='presentation')
+                          a#Children-tab.nav-link(data-toggle='tab', href='#Children', role='tab', aria-controls='Children', aria-selected='false') الابناء
+                      #myTabContent.tab-content
+                        #wife.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='wife-tab') 
+                          .container-fliud 
+                            .row
+                              .col-lg-4.col-md-6.col-sm-12 
+                                .form-group
+                                  label(for='exampleInputEmail1')   (رقم هوية)  الزوجة 
+                                  input#exampleInputEmail1.form-control(type='text', )
+                              .col-lg-4.col-md-6.col-sm-12 
+                                .form-group
+                                  label(for='exampleInputEmail1')      اسم الزوجة 
+                                  input#exampleInputEmail1.form-control(type='text', )
+                              .col-lg-4.col-md-6.col-sm-12 
+                                .form-group.form-date-group
+                                  label(for='exampleInputEmail1') تاريخ الميلاد
+                                  input#exampleInputEmail1.form-control.form-date-control(type='date', )
+                              .col-lg-4.col-md-6.col-sm-12 
+                                .form-group
+                                  label(for='exampleInputEmail1')  الحالة
+                                  select#exampleFormControlSelect1.form-control
+                                    option زوجة
+                                    option متوفاه
+                                    option مطلق 
+                              .col-lg-4.col-md-6.col-sm-12 
+                                .form-group.form-date-group
+                                  label(for='exampleInputEmail1') تاريخ الزواج
+                                  input#exampleInputEmail1.form-control.form-date-control(type='date', )
+                              .col-lg-4.col-md-6.col-sm-12 
+                                .form-group.form-date-group
+                                  label(for='exampleInputEmail1') تاريخ الطلاق
+                                  input#exampleInputEmail1.form-control.form-date-control(type='date', )
+                              .col-lg-4.col-md-6.col-sm-12 
+                                .form-group.form-date-group
+                                  label(for='exampleInputEmail1') تاريخ الوفاه
+                                  input#exampleInputEmail1.form-control.form-date-control(type='date', )
+                              .col-lg-4.col-md-6.col-sm-12 
+                                .form-group.form-date-group
+                                  label(for='exampleInputEmail1') صورة
+                                  .custom-file
+                                    input#customFile.custom-file-input(type='file')
+                                    label.custom-file-label(for='customFile') اختار الملف
+
+                              .col-lg-4.col-md-6.col-sm-12
+                                .form-group
+                                  label(for='exampleInputEmail1') 
+                                  .form-group
+                                    a.btn.btn-master-outline-transparent.mt-2 
+                                      i.fas.fa-plus.fa-fw
+                                      | اضافه زوجة   
+                              .col-lg-12 
+                                table.table.table-striped
+                                  thead 
+                                    tr 
+                                      th رقم هوية
+                                      th اسم الزوجة
+                                      th تاريخ الميلاد
+                                      th الحالة
+                                      th تاريخ الزواج
+                                      th تاريخ الطلاق
+                                      th تاريخ الوفاه
+                                  tbody 
+                                    tr 
+                                      td(data-label="رقم هوية")  20508060
+                                      td(data-label="اسم الزوجة")  أميرة عبد النبى محمود
+                                      td(data-label="تاريخ الميلاد")  15/07/1990   
+                                      td(data-label="الحالة")  متزوجة   
+                                      td(data-label="تاريخ الزواج")     27/03/2018
+                                      td(data-label="تاريخ الطلاق")     &nbsp;	
+                                      td(data-label="تاريخ الوفاه")   &nbsp;	  
+                                    tr 
+                                      td(data-label="رقم هوية")  40806030
+                                      td(data-label="اسم الزوجة")  سعاد على حسن
+                                      td(data-label="تاريخ الميلاد")  03/02/1978   
+                                      td(data-label="الحالة")  متوفاه   
+                                      td(data-label="تاريخ الزواج")     13/06/2005
+                                      td(data-label="تاريخ الطلاق")     &nbsp;	
+                                      td(data-label="تاريخ الوفاه")     22/04/2015
+                                    tr 
+                                      td(data-label="رقم هوية")  125789654
+                                      td(data-label="اسم الزوجة")   فاطمه اسماعيل محمود
+                                      td(data-label="تاريخ الميلاد")  07/11/1980  
+                                      td(data-label="الحالة")  مطلقة   
+                                      td(data-label="تاريخ الزواج")     19/12/2016
+                                      td(data-label="تاريخ الطلاق")     03/09/2017
+                                      td(data-label="تاريخ الوفاه")    &nbsp;	
+                        #Children.tab-pane.fade(role='tabpanel', aria-labelledby='Children-tab') 
+                          .container-fliud 
+                            .row
+                              .col-lg-4.col-md-6.col-sm-12 
+                                .form-group
+                                  label(for='exampleInputEmail1') اسم الام
+                                  select#exampleFormControlSelect1.form-control
+                                    option أميرة عبد النبى محمود	
+                                    option سعاد على حسن	
+                                    option فاطمه اسماعيل محمود	 
+                              .col-lg-4.col-md-6.col-sm-12 
+                                .form-group
+                                  label(for='exampleInputEmail1') اسم الابن / اسم الابنة
+                                  input#exampleInputEmail1.form-control(type='text', ) 
+                              .col-lg-4.col-md-6.col-sm-12 
+                                .form-group.form-date-group
+                                  label(for='exampleInputEmail1') تاريخ الميلاد
+                                  input#exampleInputEmail1.form-control.form-date-control(type='date', )    
+                              .col-lg-4.col-md-6.col-sm-12 
+                                .form-group
+                                  label(for='exampleInputEmail1') النوع
+                                  .form-group
+                                    .form-check.form-check-inline
+                                      input#Man.form-check-input(type='radio', name='Gender', value='options1' )
+                                      label.form-check-label(for='Man') ذكر
+                                    .form-check.form-check-inline
+                                      input#woman.form-check-input(type='radio', name='Gender', value='options2')
+                                      label.form-check-label(for='woman') انثى
+                              
+                              .col-lg-4.col-md-6.col-sm-12 
+                                .form-group
+                                  label(for='exampleInputEmail1') الحالة
+                                  .custom-control.custom-checkbox.form-group
+                                    input#customControlAutosizingp.custom-control-input(type='checkbox')
+                                    label.custom-control-label(for='customControlAutosizingp') متوفى
+                              .col-lg-4.col-md-6.col-sm-12 
+                                .form-group.form-date-group
+                                  label(for='exampleInputEmail1') تاريخ الوفاه
+                                  input#exampleInputEmail1.form-control.form-date-control(type='date', )
+                              .col-lg-4.col-md-6.col-sm-12 
+                                .form-group.form-date-group
+                                  label(for='exampleInputEmail1') صورة
+                                  .custom-file
+                                    input#customFile.custom-file-input(type='file')
+                                    label.custom-file-label(for='customFile') اختار الملف    
+                              .col-lg-4.col-md-6.col-sm-12
+                                .form-group
+                                  label(for='exampleInputEmail1') 
+                                  .form-group
+                                    a.btn.btn-master-outline-transparent.mt-2 
+                                      i.fas.fa-plus.fa-fw
+                                      | اضافه ابن   
+                              .col-lg-12 
+                                table.table.table-striped
+                                  thead 
+                                    tr 
+                                      th اسم الام
+                                      th اسم الابن
+                                      th تاريخ الميلاد
+                                      th النوع
+                                      th الحالة
+                                      th تاريخ الوفاه
+                                  tbody 
+                                    tr 
+                                      td(data-label="اسم الام") أميرة عبد النبى محمود
+                                      td(data-label="اسم الابن") احمد
+                                      td(data-label="تاريخ الميلاد") 15/07/2019   
+                                      td(data-label="النوع") ذكر   
+                                      td(data-label="الحالة")    على قيد الحياه
+                                      td(data-label="تاريخ الوفاه")    &nbsp;	
+                                      
+                                    tr 
+                                      td(data-label="اسم الام") سعاد على حسن
+                                      td(data-label="اسم الابن") محمود   
+                                      td(data-label="تاريخ الميلاد") 22/04/2015   
+                                      td(data-label="النوع")    ذكر
+                                      td(data-label="الحالة")    متوفى
+                                      td(data-label="تاريخ الوفاه")    22/04/2015
+                                    tr 
+                                      td(data-label="اسم الام")  فاطمه اسماعيل محمود
+                                      td(data-label="اسم الابن") اسماء 
+                                      td(data-label="تاريخ الميلاد") 03/09/2018   
+                                      td(data-label="النوع")    انثى
+                                      td(data-label="الحالة")   على قيد الحياه
+                                      td(data-label="تاريخ الوفاه") &nbsp;	
+
+
+              #scientific.tab-pane.fade(role='tabpanel', aria-labelledby='scientific-tab') 
+                .container-fliud 
+                  .row
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') المؤهل التعليمي
+                        select#exampleFormControlSelect1.form-control
+                          option دكتوراة 
+                          option الإمارات العربية المتحدة
+                          option الكويت‎
+                          option البحرين
+                          option الأردن
+                    .col-lg-4.col-md-6.col-sm-12 
+                      .form-group
+                        label(for='exampleInputEmail1') التخصص
+                        input#exampleInputEmail1.form-control(type='text', ) 
+                    .col-lg-4.col-md-6.col-sm-12
+                      .form-group
+                        label(for='exampleInputEmail1') 
+                        .form-group
+                          a.btn.btn-master-outline-transparent.mt-2 
+                            i.fas.fa-plus.fa-fw
+                            | اضافه مؤهل
+                    .col-lg-12.col-md-12.col-sm-12.d-flex.justify-content-end
+                      a.btn-master-outline(href="blog.html") حفظ البيانات    
+    
+      
+
+
+    include includes/model.pug
+    include includes/footer.pug
+    
+    //- script
+    include includes/script.pug

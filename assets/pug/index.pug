@@ -1,0 +1,71 @@
+- var pageTitl = "Test";
+doctype html
+html(lang="ar")
+  head
+    include includes/head.pug
+  body
+    .login-page
+      .image 
+        img.w-100(src="./assets/image/tawasal.png", alt="twasal Logo")
+      h2.text-center.logo-text تواصل آل با حطاب
+      .test-login-box
+        .screen-one
+          .log-in
+            .content
+              h4.text-center تسجيل الدخول
+              form
+                .form-group
+                  label(for='exampleInputEmail1') أسم المستخدم
+                  input#exampleInputEmail1.form-control(type='text', aria-describedby='emailHelp' required)
+                .form-group
+                  label(for='exampleInputPassword1') كلمة المرور
+                  input#exampleInputPassword1.form-control(type='password' required)
+                
+                .custom-control.custom-checkbox.form-group
+                  input#customControlAutosizingp.custom-control-input(type='checkbox')
+                  label.custom-control-label(for='customControlAutosizingp') تذكر كلمة المرور
+                .form-group
+                  button.btn.btn-master(type='submit') دخول
+                .form-group
+                  a.forgot-password(href="#")  نسيت كلمة المرور ؟
+                a.btn-master-outline-transparent.d-block.text-center(href="registration.html")  تسجيل طلب انضمام
+                
+          .sun-up
+            .contents
+              .images 
+                img.w-100(src="./assets/image/twasalLogo.png", alt="twasal Logo")
+              h2.text-center.text-logo تواصل آل با حطاب
+              a.btn-master-outline(href="registration.html")  تسجيل طلب انضمام    
+        .forget
+            .content
+              .forget-box 
+                h4.text-center نسيت كلمة المرور
+                form
+                  .form-group
+                    label(for='exampleInputEmail13') رقم الهوية 
+                    input#exampleInputEmail13.form-control(type='text' )
+                  .text-center
+                    a.btn.btn-master(href="#") ارسال الكود
+                  .form-group.sms-code
+
+                      input#exampleInputEmail13.form-control(type='text' )
+                      input#exampleInputEmail13.form-control(type='text' )
+                      input#exampleInputEmail13.form-control(type='text' )
+                      input#exampleInputEmail13.form-control(type='text' )
+                  .text-center
+                    a.btn.btn-master-outline-transparent.send-Id(href="#") تأكيد   
+        .change-password
+          .content
+            .change-password-box 
+              h4.text-center إعادة تعيين كلمة المرور
+              form
+                .form-group
+                  label(for='exampleInputEmail13') كلمة مرور جديدة
+                  input#exampleInputEmail13.form-control(type='password' )
+                .form-group
+                  label(for='exampleInputEmail13') إعادة كلمة المرور
+                  input#exampleInputEmail13.form-control(type='password' )
+                .text-center
+                  a.btn.btn-master.save-change(href="#") حفظ التغييرات            
+    //- script
+    include includes/script.pug

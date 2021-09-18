@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twasal</title>
+    <link rel="shortcut icon" href="./assets/image/twasalfavicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/image/twasalfavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container"> <a class="navbar-brand" href="blog.html"> <img src="./assets/image/twasalLogo.png" alt="">
+          <h5 class="text">تواصل آل باحطاب</h5></a>
+        <ul class="navbar-nav ml-auto">
+          <li class=" nav-item "><a class="nav-link" href="blog.html"><span class="icon"> <i class="fas fa-home fa-fw fa-lg"></i></span><span class="text">الرئيسية</span></a></li>
+          <li class=" nav-item "><a class="nav-link" href="tree.html"> <span class="icon"> <i class="fas fa-tree fa-fw fa-lg"> </i></span><span class="text">شجرة العائلة</span></a></li>
+          <li class=" nav-item "><a class="nav-link" href="help.html"> <span class="icon"> <i class="fas fa-hands-helping fa-fw fa-lg"> </i></span><span class="text">طلب مساعدة</span></a></li>
+          <li class=" nav-item "><a class="nav-link" data-toggle="modal" data-target="#notificationModal"> <i class="far fa-bell fa-fw fa-lg"></i><span class="notification"> </span></a></li>
+          <li class="nav-item  active"><a class="nav-link" href="user.html"> 
+              <!--img(src="./assets/image/Ellipse.png", alt="")--><i class="fas fa-user fa-fw fa-lg"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="user-page"> 
+      <div class="container"> 
+        <div class="row"> 
+          <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="user-info"> 
+              <div class="image-upload">
+                <div class="avatar-upload">
+                  <div class="avatar-edit">
+                    <input id="imageUpload" type="file" accept=".png, .jpg, .jpeg">
+                    <label for="imageUpload"></label>
+                  </div>
+                  <div class="avatar-preview">
+                    <div id="imagePreview" style="background-image: url(./assets/image/Ellipse7.png);"> </div>
+                  </div>
+                </div>
+              </div>
+              <h4 class="text-center">محمد بن عمر محمد</h4>
+              <h5 class="text-center">مدير مالى</h5>
+              <ul class="list-unstyled">
+                <li><img src="./assets/image/husband.png" alt=""><span class="text">2 زوجة</span></li>
+                <li><img src="./assets/image/children.png" alt=""><span class="text">6 ابناء</span></li>
+              </ul>
+              <div class="groub-button"> <a class="btn btn-primary" href="tree.html">  <i class="fas fa-code-branch fa-fw fa-lg"></i>شجرة العائلة</a><a class="btn btn-outline-success" href="">  <i class="far fa-envelope fa-fw fa-lg"></i> الوارد</a></div>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-12 col-sm-12"> 
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">البيانات الاساسية</a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">معلومات عامة</a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">الحالة الاجتماعية</a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" id="scientific-tab" data-toggle="tab" href="#scientific" role="tab" aria-controls="scientific" aria-selected="false">معلومات علمية</a></li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
+                <div class="container-fliud"> 
+                  <div class="row"> 
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">الاسم الاول </label>
+                        <input class="form-control" id="exampleInputEmail1" type="text" placeholder="محمد">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">الاسم الثاني </label>
+                        <input class="form-control" id="exampleInputEmail1" type="text" placeholder="عمر">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">الاسم الثالث </label>
+                        <input class="form-control" id="exampleInputEmail1" type="text" placeholder="محمد">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">الاسم الرابع</label>
+                        <input class="form-control" id="exampleInputEmail1" type="text" placeholder="عبدالله">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">  (رقم هوية) الام او الزوجة </label>
+                        <input class="form-control" id="exampleInputEmail1" type="text">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">اسم العائلة </label>
+                        <input class="form-control" id="exampleInputEmail1" type="text" placeholder="حطاب">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">النوع الطلب</label>
+                        <div class="form-group">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="inlineRadio1" type="radio" name="inlineRadioOptions" value="option1" checked>
+                            <label class="form-check-label" for="inlineRadio1">باحطاب</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="inlineRadio2" type="radio" name="inlineRadioOptions" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">اخرى</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">النوع</label>
+                        <div class="form-group">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="Man" type="radio" name="Gender" value="options1" checked>
+                            <label class="form-check-label" for="Man">ذكر</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="woman" type="radio" name="Gender" value="options2">
+                            <label class="form-check-label" for="woman">انثى</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">رقم الهوية  </label>
+                        <input class="form-control" id="exampleInputEmail1" type="text" placeholder="0142365">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">الكنية  </label>
+                        <input class="form-control" id="exampleInputEmail1" type="text" placeholder=" ابو جعفر">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group form-date-group">
+                        <label for="exampleInputEmail1">تاريخ الميلاد</label>
+                        <input class="form-control form-date-control" id="exampleInputEmail1" type="date">
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-end"><a class="btn-master-outline" href="blog.html">حفظ البيانات</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> 
+                <div class="container-fliud"> 
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">بلد الإقامة</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>المملكة العربيه السعودية</option>
+                          <option>الإمارات العربية المتحدة</option>
+                          <option>الكويت‎</option>
+                          <option>البحرين</option>
+                          <option>الأردن</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">المدينة</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>جدة</option>
+                          <option>الرياض</option>
+                          <option>الدمام </option>
+                          <option>القصيم</option>
+                          <option>المدينة</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">الجنسية</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>سعودى</option>
+                          <option>امراتى </option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">رقم الجوال</label>
+                        <input class="form-control" id="exampleInputEmail1" type="text" placeholder="0112 1245 214">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">البريد الالكتروني</label>
+                        <input class="form-control" id="exampleInputEmail1" type="text" placeholder="Mohamed@gmail.com">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">الحالة</label>
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox form-group">
+                            <input class="custom-control-input" id="customControlAutosizingp3" type="checkbox">
+                            <label class="custom-control-label" for="customControlAutosizingp3">متوفى  </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group form-date-group">
+                        <label for="exampleInputEmail1">تاريخ الوفاه</label>
+                        <input class="form-control form-date-control" id="exampleInputEmail1" type="date">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">العنوان </label>
+                        <input class="form-control" id="exampleInputEmail1" type="text">
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-end"><a class="btn-master-outline" href="blog.html">حفظ البيانات</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"> 
+                <div class="container-fliud"> 
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">الحالة الاجتماعية</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>أعزب</option>
+                          <option>متزوج</option>
+                          <option>مطلق </option>
+                          <option>أرمل</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12"> 
+                      <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" id="wife-tab" data-toggle="tab" href="#wife" role="tab" aria-controls="wife" aria-selected="true">زوجة</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" id="Children-tab" data-toggle="tab" href="#Children" role="tab" aria-controls="Children" aria-selected="false">الابناء</a></li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="wife" role="tabpanel" aria-labelledby="wife-tab"> 
+                          <div class="container-fliud"> 
+                            <div class="row">
+                              <div class="col-lg-4 col-md-6 col-sm-12"> 
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">  (رقم هوية)  الزوجة </label>
+                                  <input class="form-control" id="exampleInputEmail1" type="text">
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12"> 
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">     اسم الزوجة </label>
+                                  <input class="form-control" id="exampleInputEmail1" type="text">
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12"> 
+                                <div class="form-group form-date-group">
+                                  <label for="exampleInputEmail1">تاريخ الميلاد</label>
+                                  <input class="form-control form-date-control" id="exampleInputEmail1" type="date">
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12"> 
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1"> الحالة</label>
+                                  <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>زوجة</option>
+                                    <option>متوفاه</option>
+                                    <option>مطلق </option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12"> 
+                                <div class="form-group form-date-group">
+                                  <label for="exampleInputEmail1">تاريخ الزواج</label>
+                                  <input class="form-control form-date-control" id="exampleInputEmail1" type="date">
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12"> 
+                                <div class="form-group form-date-group">
+                                  <label for="exampleInputEmail1">تاريخ الطلاق</label>
+                                  <input class="form-control form-date-control" id="exampleInputEmail1" type="date">
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12"> 
+                                <div class="form-group form-date-group">
+                                  <label for="exampleInputEmail1">تاريخ الوفاه</label>
+                                  <input class="form-control form-date-control" id="exampleInputEmail1" type="date">
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12"> 
+                                <div class="form-group form-date-group">
+                                  <label for="exampleInputEmail1">صورة</label>
+                                  <div class="custom-file">
+                                    <input class="custom-file-input" id="customFile" type="file">
+                                    <label class="custom-file-label" for="customFile">اختار الملف</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1"> </label>
+                                  <div class="form-group"><a class="btn btn-master-outline-transparent mt-2"> <i class="fas fa-plus fa-fw"></i>اضافه زوجة   </a></div>
+                                </div>
+                              </div>
+                              <div class="col-lg-12"> 
+                                <table class="table table-striped">
+                                  <thead> 
+                                    <tr> 
+                                      <th>رقم هوية</th>
+                                      <th>اسم الزوجة</th>
+                                      <th>تاريخ الميلاد</th>
+                                      <th>الحالة</th>
+                                      <th>تاريخ الزواج</th>
+                                      <th>تاريخ الطلاق</th>
+                                      <th>تاريخ الوفاه</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody> 
+                                    <tr> 
+                                      <td data-label="رقم هوية"> 20508060</td>
+                                      <td data-label="اسم الزوجة"> أميرة عبد النبى محمود</td>
+                                      <td data-label="تاريخ الميلاد"> 15/07/1990   </td>
+                                      <td data-label="الحالة"> متزوجة   </td>
+                                      <td data-label="تاريخ الزواج">    27/03/2018</td>
+                                      <td data-label="تاريخ الطلاق">    &nbsp;	</td>
+                                      <td data-label="تاريخ الوفاه">  &nbsp;	  </td>
+                                    </tr>
+                                    <tr> 
+                                      <td data-label="رقم هوية"> 40806030</td>
+                                      <td data-label="اسم الزوجة"> سعاد على حسن</td>
+                                      <td data-label="تاريخ الميلاد"> 03/02/1978   </td>
+                                      <td data-label="الحالة"> متوفاه   </td>
+                                      <td data-label="تاريخ الزواج">    13/06/2005</td>
+                                      <td data-label="تاريخ الطلاق">    &nbsp;	</td>
+                                      <td data-label="تاريخ الوفاه">    22/04/2015</td>
+                                    </tr>
+                                    <tr> 
+                                      <td data-label="رقم هوية"> 125789654</td>
+                                      <td data-label="اسم الزوجة">  فاطمه اسماعيل محمود</td>
+                                      <td data-label="تاريخ الميلاد"> 07/11/1980  </td>
+                                      <td data-label="الحالة"> مطلقة   </td>
+                                      <td data-label="تاريخ الزواج">    19/12/2016</td>
+                                      <td data-label="تاريخ الطلاق">    03/09/2017</td>
+                                      <td data-label="تاريخ الوفاه">   &nbsp;	</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="Children" role="tabpanel" aria-labelledby="Children-tab"> 
+                          <div class="container-fliud"> 
+                            <div class="row">
+                              <div class="col-lg-4 col-md-6 col-sm-12"> 
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">اسم الام</label>
+                                  <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>أميرة عبد النبى محمود	</option>
+                                    <option>سعاد على حسن	</option>
+                                    <option>فاطمه اسماعيل محمود	 </option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12"> 
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">اسم الابن / اسم الابنة</label>
+                                  <input class="form-control" id="exampleInputEmail1" type="text">
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12"> 
+                                <div class="form-group form-date-group">
+                                  <label for="exampleInputEmail1">تاريخ الميلاد</label>
+                                  <input class="form-control form-date-control" id="exampleInputEmail1" type="date">
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12"> 
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">النوع</label>
+                                  <div class="form-group">
+                                    <div class="form-check form-check-inline">
+                                      <input class="form-check-input" id="Man" type="radio" name="Gender" value="options1">
+                                      <label class="form-check-label" for="Man">ذكر</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input class="form-check-input" id="woman" type="radio" name="Gender" value="options2">
+                                      <label class="form-check-label" for="woman">انثى</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12"> 
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">الحالة</label>
+                                  <div class="custom-control custom-checkbox form-group">
+                                    <input class="custom-control-input" id="customControlAutosizingp" type="checkbox">
+                                    <label class="custom-control-label" for="customControlAutosizingp">متوفى</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12"> 
+                                <div class="form-group form-date-group">
+                                  <label for="exampleInputEmail1">تاريخ الوفاه</label>
+                                  <input class="form-control form-date-control" id="exampleInputEmail1" type="date">
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12"> 
+                                <div class="form-group form-date-group">
+                                  <label for="exampleInputEmail1">صورة</label>
+                                  <div class="custom-file">
+                                    <input class="custom-file-input" id="customFile" type="file">
+                                    <label class="custom-file-label" for="customFile">اختار الملف    </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1"> </label>
+                                  <div class="form-group"><a class="btn btn-master-outline-transparent mt-2"> <i class="fas fa-plus fa-fw"></i>اضافه ابن   </a></div>
+                                </div>
+                              </div>
+                              <div class="col-lg-12"> 
+                                <table class="table table-striped">
+                                  <thead> 
+                                    <tr> 
+                                      <th>اسم الام</th>
+                                      <th>اسم الابن</th>
+                                      <th>تاريخ الميلاد</th>
+                                      <th>النوع</th>
+                                      <th>الحالة</th>
+                                      <th>تاريخ الوفاه</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody> 
+                                    <tr> 
+                                      <td data-label="اسم الام">أميرة عبد النبى محمود</td>
+                                      <td data-label="اسم الابن">احمد</td>
+                                      <td data-label="تاريخ الميلاد">15/07/2019   </td>
+                                      <td data-label="النوع">ذكر   </td>
+                                      <td data-label="الحالة">   على قيد الحياه</td>
+                                      <td data-label="تاريخ الوفاه">   &nbsp;	</td>
+                                    </tr>
+                                    <tr> 
+                                      <td data-label="اسم الام">سعاد على حسن</td>
+                                      <td data-label="اسم الابن">محمود   </td>
+                                      <td data-label="تاريخ الميلاد">22/04/2015   </td>
+                                      <td data-label="النوع">   ذكر</td>
+                                      <td data-label="الحالة">   متوفى</td>
+                                      <td data-label="تاريخ الوفاه">   22/04/2015</td>
+                                    </tr>
+                                    <tr> 
+                                      <td data-label="اسم الام"> فاطمه اسماعيل محمود</td>
+                                      <td data-label="اسم الابن">اسماء </td>
+                                      <td data-label="تاريخ الميلاد">03/09/2018   </td>
+                                      <td data-label="النوع">   انثى</td>
+                                      <td data-label="الحالة">  على قيد الحياه</td>
+                                      <td data-label="تاريخ الوفاه">&nbsp;	</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="scientific" role="tabpanel" aria-labelledby="scientific-tab"> 
+                <div class="container-fliud"> 
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">المؤهل التعليمي</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>دكتوراة </option>
+                          <option>الإمارات العربية المتحدة</option>
+                          <option>الكويت‎</option>
+                          <option>البحرين</option>
+                          <option>الأردن</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"> 
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">التخصص</label>
+                        <input class="form-control" id="exampleInputEmail1" type="text">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1"> </label>
+                        <div class="form-group"><a class="btn btn-master-outline-transparent mt-2"> <i class="fas fa-plus fa-fw"></i>اضافه مؤهل</a></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-end"><a class="btn-master-outline" href="blog.html">حفظ البيانات    </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal-->
+    <div class="modal fade notification-Modal" id="notificationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">الاشعارات</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="card-notifion"> 
+              <h6 class="card-title">طلب جديد </h6>
+              <div class="card-body"> 
+                <p> تم اضافة طلب انضمام جديد وسيتم اخبارك في اقرب وقت ممكن بعد انهاء الدعم من مراجعة طلبك , يمكنك مراجعة البيانات المدخلة من <a href="">هنا</a> او يمكنك<a href=""> التواصل </a>في حالة تريد اضافة معلومات اخرى </p><small class="date">1 يونيو , 2021 - 46:9 مساءً</small>
+              </div>
+            </div>
+            <div class="card-notifion"> 
+              <h6 class="card-title">طلب جديد </h6>
+              <div class="card-body"> 
+                <p> تم اضافة طلب انضمام جديد وسيتم اخبارك في اقرب وقت ممكن بعد انهاء الدعم من مراجعة طلبك , يمكنك مراجعة البيانات المدخلة من <a href="">هنا</a> او يمكنك<a href=""> التواصل </a>في حالة تريد اضافة معلومات اخرى </p><small class="date">1 يونيو , 2021 - 46:9 مساءً</small>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer"><a href="">رؤيه جميع الاشعارات</a></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <p>
+             جميع الحقوق محفوظة &copy; 2021 <i class="fa fa-value" aria-hidden="true">&nbsp;</i></p><a href="Contact.html">تواصل معنا</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/jquery-3.6.0.min.js"> </script>
+    <script src="./assets/js/popper.min.js"> </script>
+    <script src="./assets/js/bootstrap.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script>
+    <script src="./assets/js/main.js"> </script>
+  </body>
+</html>

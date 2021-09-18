@@ -1,0 +1,128 @@
+/* Start Main page */
+.home-page {
+  background-color: #e5e5e5;
+  /* Start Slide Main*/
+  main.slide-main {
+    background: url(../image/MaskGroup.png) no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 991.98px) { 
+      height: 25vh;
+      background-attachment: unset;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    h1 {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      font-weight: 700;
+      font-family: "El Messiri", sans-serif;
+      font-size: 5rem;
+      @media (max-width: 991.98px) { 
+        font-size: 42px;
+      }
+    }
+  }
+  /* End Slide Main*/
+  /* Start Search  */
+  section.search  {
+    padding: 40px 0;
+  }
+  /* End Search  */
+  /* Start Aside */
+  .article-Card-page {
+    padding-bottom: 60px;
+  }
+  /* Ens Aside */
+  .icon-filter {
+    display: none;
+    @media (max-width: 991.98px) { 
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #fff;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      bottom: 120px;
+      left: 10px;
+      box-shadow: 0 0 10px rgba(#000,0.2);
+      z-index: 9;
+    }
+  }
+  .aside-box {
+    @media (max-width: 991.98px) {
+      display: none;
+    }
+  }
+}
+aside.aside {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  .head-title {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid rgba($mColor, 0.5);
+  }
+  .head-list {
+    font-weight: 600;
+    padding-inline-start: 15px;
+    & ~ ul {
+      margin-inline-start: 20px;
+      margin-bottom: 25px;
+    }
+  }
+  
+  @media (max-width: 991.98px) {
+    position: fixed;
+    bottom: 70px;
+    left:10px;
+    z-index: 8;
+    width: 50%;
+    padding: 0;
+    border-radius: 10px;
+    .head-title {
+      padding: 20px;
+    }
+    .side-body {
+      width: 98%;
+      height: 55vh;
+      overflow-y: auto;
+      padding: 0 10px;
+      .head-list {
+        & ~ ul {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  @media (max-width: 575.98px) {
+    position: fixed;
+    top: 100px;
+    left: 5px;
+    z-index: 8;
+    width: 98%;
+    padding: 0;
+    border-radius: 10px;
+  }
+}
+/* End Main page */

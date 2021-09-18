@@ -1,0 +1,103 @@
+- var pageTitl = "Home";
+doctype html
+html(lang="ar")
+  head
+    include includes/head.pug
+  body 
+    include includes/Nav.pug
+    .home-page 
+      main.slide-main 
+        h1 المدونة
+
+      section.search 
+        .container 
+          .row.justify-content-center
+            .col-lg-8.col-md-8.col-sm-12 
+              .input-group.mb-3
+                .input-group-prepend
+                  span#basic-addon1.input-group-text 
+                    i.fas.fa-search.fa-fw.fa-lg
+
+                input.form-control.form-control-lg(type='text', placeholder='كيف يتم ارسال طلب انضمام', aria-label='Username', aria-describedby='basic-addon1')
+      .container 
+        .row 
+          .col-lg-3.col-md-4.aside-box
+            aside.aside 
+              h4.head-title
+                .custom-control.custom-checkbox.mr-sm-2
+                    input#customControlall.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='customControlall') جميع الاقسام
+              .side-body
+                h5.head-list اخبار العائلة
+                ul 
+                  li 
+                    .custom-control.custom-checkbox.mr-sm-2
+                      input#customControlAutosizingp.custom-control-input(type='checkbox')
+                      label.custom-control-label(for='customControlAutosizingp') شخصية
+                  li 
+                    .custom-control.custom-checkbox.mr-sm-2
+                      input#customControlAutosizingh.custom-control-input(type='checkbox')
+                      label.custom-control-label(for='customControlAutosizingh') افراح
+                h5.head-list رسائل مهمة
+                ul 
+                  li 
+                    .custom-control.custom-checkbox.mr-sm-2
+                      input#customControlAutosizingd.custom-control-input(type='checkbox')
+                      label.custom-control-label(for='customControlAutosizingd') الوفاة
+                  li 
+                    .custom-control.custom-checkbox.mr-sm-2
+                      input#customControlAutosizingN.custom-control-input(type='checkbox')
+                      label.custom-control-label(for='customControlAutosizingN') خبر جديد
+                  li 
+                    .custom-control.custom-checkbox.mr-sm-2
+                      input#customControlAutosizingZ.custom-control-input(type='checkbox')
+                      label.custom-control-label(for='customControlAutosizingZ') زكاة
+                h5.head-list الوقف
+                ul 
+                  li 
+                    .custom-control.custom-checkbox.mr-sm-2
+                      input#customControlAutosizingR.custom-control-input(type='checkbox')
+                      label.custom-control-label(for='customControlAutosizingR') تقارير
+                  
+                h5.head-list ساهم معنا
+                ul 
+                  li 
+                    .custom-control.custom-checkbox.mr-sm-2
+                      input#customControlAutosizingpro.custom-control-input(type='checkbox')
+                      label.custom-control-label(for='customControlAutosizingpro') المشاريع
+                  
+
+          .col-lg-9.col-md-12.col-sm-12
+            section.article-Card-page
+              .row 
+                -for(var i = 0 ; i < 4 ; i++) {
+                  .col-lg-6.col-md-6.col-sm-12
+                    article.card
+                      .image
+                        img.card-img-top(src='./assets/image/adsas.png', alt='Article Image')
+                      .card-body
+                        small.info منذ 5 ساعات - 9 يونيو 2021
+                        h5.card-title كيف يتم إنشاء طلب انضمام
+                        p.card-text
+                          //- | هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر...
+                          | هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر
+                        a.btn(href='blogInfo.html') قراءة المزيد..
+                -}
+      //-icon filter
+      .icon-filter 
+        i.fas.fa-filter.fa-fw.fa-lg
+
+
+
+
+
+    // 
+      button.btn.btn-master-outline.m-5 حفظ التغيرات 
+      a.btn.btn-master-outline(href="")  حفظ التغيرات 
+
+
+    include includes/model.pug
+    include includes/footer.pug
+    
+    //- script
+    include includes/script.pug

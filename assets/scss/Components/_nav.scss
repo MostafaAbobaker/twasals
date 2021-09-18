@@ -1,0 +1,104 @@
+nav.navbar {
+  font-family: 'El Messiri', sans-serif;
+  @media (max-width: 991.98px) { 
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    padding: .1rem 1rem;
+    box-shadow: 0 2px 5px rgba(#000 ,0.2);
+  }
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    white-space: unset;
+    img {
+      width: 75px;
+      @media (max-width: 991.98px) { 
+        width: 60px;
+      }
+    }
+    h5.text {
+      margin-inline-start: 5px;
+      display: block;
+      width: 80px;
+      word-wrap: break-word;
+      font-weight: 700;
+      @media (max-width: 991.98px) { 
+        width: auto;
+      }
+    }
+  }
+  ul.navbar-nav {
+    align-items: center;
+    .nav-item {
+      .nav-link {
+        padding-inline: 1rem;
+        position: relative;
+        font-weight: 700;
+        cursor: pointer;
+        span.text {
+          @media (max-width: 991.98px) { 
+            display: none;
+          }
+        }
+        span.icon {
+          display: none;
+          @media (max-width: 991.98px) { 
+            display: block;
+          }
+        }
+        &.sunup {
+          background-color: $mColor;
+          color: #fff;
+          border-radius: 20px;
+        }
+        span.notification {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          right: 20px;
+          top: 5px;
+          background: #F55C47;
+          border-radius: 50%;
+        }
+        img {
+          width: 35px;
+          border-radius: 50%;
+        }
+      }
+      &.active {
+        .nav-link  {
+          color: $mColor;
+        }
+      }
+    }
+    @media (max-width: 991.98px) { 
+      position: fixed;
+      background-color: #fff;
+      box-shadow: 0 -2px 5px rgba(#000,0.1);
+      flex-direction: row-reverse;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 10px;
+      border-radius: 10px 10px 0 0 ;
+      li.nav-item {
+        &:nth-child(1) {
+          order: 1;
+          .nav-link {
+            font-size: 22px;
+          }
+        }
+        &:nth-child(2) {
+          order: 2;
+        }
+        &:nth-child(3) {
+          order: 3;
+        }
+      }
+    }
+  }
+}

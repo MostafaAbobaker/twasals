@@ -1,0 +1,96 @@
+- var pageTitl = "Help";
+doctype html
+html(lang="ar")
+  head
+    include includes/head.pug
+  body 
+    include includes/Nav.pug
+    .help-page 
+      .container 
+        .help-box
+          h3.text-center تقديم طلب مساعدة
+          .row 
+            .col-lg-12.col-md-12.col-sm-12 
+              .form-group
+                label(for='exampleInputEmail1') نوع الطلب
+                select#exampleFormControlSelect1.form-control
+                  option اختيارى
+                  option الإمارات العربية المتحدة
+                  option الكويت‎
+                  option البحرين
+                  option الأردن
+            .col-lg-12.col-md-12.col-sm-12  
+              .content-form.my-3  
+                .form-check.form-check-inline
+                  input#inlineRadio1.form-check-input(type='radio', name='inlineRadioOptions', value='option1')
+                  label.form-check-label(for='inlineRadio1') شخصي
+                .form-check.form-check-inline
+                  input#inlineRadio2.form-check-input(type='radio', name='inlineRadioOptions', value='option2')
+                  label.form-check-label(for='inlineRadio2') عن غيره
+            .col-lg-12.col-md-12.col-sm-12 
+              .form-group
+                label(for='exampleInputEmail1') افراد العائلة
+                select#exampleFormControlSelect1.form-control
+                  option ابن
+                  option ابنه
+                  option زوج
+                  option زوجه
+                  option اخ
+                  option اخت
+            .col-lg-4.col-md-6.col-sm-12 
+              .form-group
+                label(for='exampleInputEmail1') نوعه
+                select#exampleFormControlSelect1.form-control
+                  option غزائى
+                  option دراسى
+                  option معيشى
+                  option سكن
+                  option انتقالات
+             
+            .col-lg-4.col-md-6.col-sm-12 
+              .form-group
+                label(for='exampleInputEmail1') المرحلة
+                select#exampleFormControlSelect1.form-control
+                  option الجامعية
+                  option دراسة
+                  option الكويت‎
+                  option البحرين
+                  option الأردن
+            .col-lg-4.col-md-6.col-sm-12 
+              .form-group
+                label(for='exampleInputEmail1') التخصص 
+                input#exampleInputEmail1.form-control(type='text', )
+            .col-lg-4.col-md-6.col-sm-12 
+              .form-group
+                label(for='exampleInputEmail1') اسم المستفيد 
+                input#exampleInputEmail1.form-control(type='text', )
+            .col-lg-4.col-md-6.col-sm-12 
+              .form-group
+                label(for='exampleInputEmail1') رقم الجوال
+                input#exampleInputEmail1.form-control(type='text', )
+            .col-lg-12.col-md-12.col-sm-12 
+              .form-group
+                label(for='exampleInputEmail1') الطلب
+                textarea#exampleFormControlTextarea1.form-control(rows='5' placeholder='وصف الطلب ' )
+            .col-lg-12.col-md-12.col-sm-12 
+              .form-group
+                label(for='exampleInputEmail1') المرفقات
+              .attachments
+                .conainer-fluid 
+                  .row
+                    .col-lg-3.col-md-6.col-sm-12.imgUp
+                      .imagePreview
+                      label.btn.btn-primary
+                        | Upload
+                        input.uploadFile.img(type='file', value='Upload Photo', style='width: 0px;height: 0px;overflow: hidden;')
+                    // col-2
+                    span.imgAdd
+                      i.fa.fa-plus
+            .col-lg-12.col-md-12.col-sm-12.d-flex.justify-content-end.my-3
+                  a.btn-master-outline(href="blog.html") ارسال
+                
+    include includes/model.pug
+    include includes/footer.pug
+    
+    //- script
+    include includes/script.pug

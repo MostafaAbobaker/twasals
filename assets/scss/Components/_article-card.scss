@@ -1,0 +1,72 @@
+/* Start Article Card */
+article.card {
+  /* border-radius: 20px; */
+  background-color: #fff;
+  font-family: 'Almarai', sans-serif;
+  margin-bottom: 35px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 2px solid $mColor;
+    background-color: transparent;
+    z-index: 1;
+  }
+  .image {
+    width: 98%;
+    position: relative;
+    top: -15px;
+    left: -20px;
+    z-index: 2;
+    @media (max-width: 575.98px) {
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    /* position: relative;
+    left: -15px;
+    top: -15px;
+    border-radius: 10px;
+    border: 5px solid #f2f2f2;
+    box-shadow: 0 0 5px rgba(#000,0.2);
+    @media (max-width: 575.98px) { 
+      left: -10px;
+      top: -10px;
+    } */
+    img {
+      width: 100%;
+    }
+  }
+  .card-body {
+    position: relative;
+    z-index: 2;
+    small.info {
+      color: #F9BABA ;
+    }
+    .card-title {
+      color: $mColor;
+      font-weight: 700;
+    }
+    .card-text {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.625;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    a {
+      color: #4DA9DD;
+      font-weight: 700;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+}
+/* End Article Card */

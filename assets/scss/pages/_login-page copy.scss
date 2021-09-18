@@ -1,0 +1,137 @@
+/* Start Login Page */
+.login-page {
+  font-family: 'Almarai', sans-serif;
+  background-color: #E5E5E5;
+  padding: 20px 0;
+  .forget , .change-password{
+    display: none;
+  }
+  .log-in, .sun-up , .forget-box, .change-password-box { 
+    width: 50%;
+    text-align: center;
+    height: 70vh;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    
+    @media (max-width: 1199.98px) { 
+      height: 85vh;
+    }
+    
+    @media (max-width: 991.98px) { 
+      height: 80vh;
+    }
+    @media (max-width: 575.98px) { 
+      width: 100%;
+      height: 75vh;
+    }
+  }
+  form {
+    width: 90%;
+    .form-group {
+      label {
+        width: 100%;
+        text-align: right;
+        font-weight: 700;
+      }
+      input.form-control {
+        background-color: #EEF1F4;
+        border-radius: 10px;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 600;
+      }
+      a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: $mColor;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          color: #187253;
+          text-shadow: 0 0 2px rgba(0, 0, 0, 0.11);
+        }
+      }
+    }
+    button.btn-master {
+      display: block;
+      width: 100%;
+    }
+  }
+  .forget-box , .change-password-box {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+    h3 {
+      margin-bottom: 30px;
+    }
+    button.btn-master {
+      display: inline-block;
+      width: auto;
+    }
+  }
+  
+  .d-flex {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.171);
+    
+    .log-in {
+      background-color: #fff;
+      h4 {
+        font-weight: 700;
+        font-family: 'Almarai', sans-serif;
+        margin: 15px 0;
+      }
+      
+    }
+    .sun-up {
+      
+      background: url(../image/Rectangle84.png) no-repeat center 65%;
+      background-size: cover;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+      
+      h2 {
+        color: #fff;
+        margin: 30px 0;
+        
+      }
+      a {
+        display: inline-block;
+      }
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .image  {
+      width: 100px;
+      text-align: center;
+      margin: auto;
+      img {
+        width: 100%;
+      }
+    }
+    
+  }
+}
+/* End Login Page */

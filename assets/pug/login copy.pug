@@ -1,0 +1,66 @@
+- var pageTitl = "Login";
+doctype html
+html(lang="ar")
+  head
+    include includes/head.pug
+  body 
+    include includes/Nav.pug
+    .login-page
+      .login-box
+        .container
+          .d-flex 
+            .log-in
+              .content
+                .image 
+                  img(src="./assets/image/twasalLogo.png", alt="twasal Logo")
+                h4.text-center تسجيل الدخول
+                form
+                  .form-group
+                    label(for='exampleInputEmail1') أسم المستخدم
+                    input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp')
+                  .form-group
+                    label(for='exampleInputPassword1') كلمة المرور
+                    input#exampleInputPassword1.form-control(type='password')
+                  .form-group
+                    a.forgot-password(href="#")  نسيت كلمة المرور ؟
+                  button.btn.btn-master(type='submit') دخول
+
+            .sun-up
+              .content
+                .image 
+                  img(src="./assets/image/twasalLogo.png", alt="twasal Logo")
+                h2.text-center تواصل آل با حطاب
+                a.btn-master-outline(href="")  تسجيل طلب انضمام
+      .forget
+        .container
+          .row.justify-content-center
+            .col-lg-4.col-md-6.col-sm-12 
+              .forget-box 
+                h3.text-center نسيت كلمة المرور
+                form
+                  .form-group
+                    label(for='exampleInputEmail13') رقم الهوية / رقم الجوال
+                    input#exampleInputEmail13.form-control(type='text' )
+                  a.btn.btn-master.send-Id(href="#") ارسال الكود
+      .change-password
+        .container
+          .row.justify-content-center
+            .col-lg-4.col-md-6.col-sm-12 
+              .change-password-box 
+                h3.text-center إعادة تعيين كلمة المرور
+                form
+                  .form-group
+                    label(for='exampleInputEmail13') كلمة مرور جديدة
+                    input#exampleInputEmail13.form-control(type='password' )
+                  .form-group
+                    label(for='exampleInputEmail13') إعادة كلمة المرور
+                    input#exampleInputEmail13.form-control(type='password' )
+                  a.btn.btn-master.save-change(href="#") حفظ التغييرات
+
+
+
+
+    include includes/footer.pug
+    
+    //- script
+    include includes/script.pug

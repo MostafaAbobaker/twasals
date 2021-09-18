@@ -1,0 +1,252 @@
+/* Start tree-page  */
+.tree-page  {
+  padding: 40px 0;
+  background-color: #E5E5E5;
+  
+  .tree-box  {
+
+    .first-tree {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      
+      li {
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+        padding: 0 5px;
+        
+        
+        .second-tree {
+          display: flex;
+          justify-content: space-evenly;
+          width: 100%;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            border-left: 1px solid #777;
+            width: 0;
+            height: 25px;
+            
+          }
+          li {
+            position: relative;
+            /* &:first-child {
+              &::before {
+                content: '';
+                position: absolute;
+                top: -25px;
+                left: -50%;
+                width: 100%;
+                height: 25px;
+                background-color: transparent; 
+                border: 1px solid #737373;
+                border-inline-end: none;
+                border-block-end: none;
+                border-radius: 0 5px 0 0;
+                z-index: 1;
+              }
+            }
+            &:last-child {
+              &::before {
+                content: '';
+                position: absolute;
+                top: -25px;
+                left: 50%;
+                width: 100%;
+                height: 25px;
+                background-color: transparent; 
+                border: 1px solid #737373;
+                border-inline-start: none;
+                border-block-end: none;
+                border-radius: 5px 0 0 0;
+                z-index: 1;
+              }
+            }
+            &::before {
+              content: '';
+              position: absolute;
+              top: -25px;
+              left: 50%;
+              width: 1px;
+              height: 25px;
+              background-color: #737373;
+              z-index: 1;
+            }
+            &:not(:first-child):not(:last-child)::after {
+              content: '';
+                position: absolute;
+                top: -25px;
+                left: 50%;
+                width: 50%;
+                height: 5pxpx;
+                background-color: transparent; 
+                border-top: 1px solid #f00;
+                
+                z-index: 1;
+            } */ 
+            &::before, &::after {
+              content: '';
+              position: absolute; 
+              top: -25px; right: 50%;
+              border-top: 1px solid #777;
+              width: 50%; height: 25px;
+            }
+            &::after{
+              right: auto; left: 50%;
+	            border-left: 1px solid #777;
+            }
+            /* &:only-child::after , &:only-child::before {
+              display: none;
+            }
+            &:first-child::before , &:last-child::after {
+              border: 0 none;
+            } */
+            &:first-child::after, 
+            &:last-child::before{
+              border: 0;
+            }
+            &:first-child::before {
+              border-radius: 0 5px 0 0 ;
+              border-right: 1px solid #777;
+            }
+            &:last-child::after{
+              border-radius: 5px 0 0 0;
+            }
+            &:only-child::after {
+              display: none;
+            }
+            &:only-child::before {
+              border-radius:0;
+              border-right: 1px solid #777;
+              transform: translateX(1px);
+            }
+            .third-tree {
+              margin-top: -25px;
+              position: relative;
+              &::before {
+                content: "";
+                position: absolute;
+                top: -25px;
+                left: 50%;
+                border-left: 1px solid #777;
+                width: 0;
+                height: 25px;
+                
+              }
+              li {
+                &::after {
+                  display: none!important;
+                }
+                &:first-child::before{
+                  display: none!important;
+                }
+                &:not(:first-child)::before {
+                  content: "";
+                  position: absolute;
+                  top: -25px;
+                  left: 50%;
+                  border-left: 1px solid #777;
+                  width: 0;
+                  height: 25px;
+                }
+              }
+              
+            }
+          }
+          
+        }
+      }
+    }
+  }
+  .card  {
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 100px;
+    padding: 10px 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0 0 3px rgba(#000,0.1);
+    @media (max-width: 575.98px) {
+      width: 60px;
+      font-size: 9px;
+    }
+    .image {
+      width: 95%;
+      margin: auto;
+      margin-bottom: 5px;
+      img {
+        border-radius: 50%;
+      }
+    }
+    .title-card, .gender {
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      @media (max-width: 575.98px) {
+        font-size: 9px;
+      }
+    }
+    .gender {
+      font-weight: normal;
+    }
+    .date  {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 12px;
+      .deadyear {
+        position: relative;
+        &::before {
+          content: '-';
+          padding: 0 5px;
+        }
+      }
+      &.dead::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: -13px;
+        background-color: #000;
+        width: 50px;
+        height: 10px;
+        transform: rotate(-45deg);
+      }
+    }
+    &.child {
+      margin-bottom: 25px;
+    }
+    /* &.child  {
+      display: flex;
+      flex-direction: row;
+      padding: 5px;
+      max-width: unset;
+      margin-bottom: 25px;
+      
+      .image {
+        width: 20%;
+        margin: unset;
+        margin-inline-end: 10px;
+      }
+      .card-bodys {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+        align-items: center;
+        font-size: 14px!important;
+      }
+      .title-card, .gender {
+        margin-inline-end: 5px;
+        font-size: 14px;
+      }
+    } */
+  }
+}
+/* End tree-page  */

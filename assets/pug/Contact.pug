@@ -1,0 +1,60 @@
+- var pageTitl = "Contact";
+doctype html
+html(lang="ar")
+  head
+    include includes/head.pug
+  body 
+    include includes/Nav.pug
+    .Contact-page
+      .container 
+        .row.Contact-box
+          .col-lg-6.col-sm-12
+            .contact-us 
+              h4.text-center مراسلتنا
+              form
+                .form-group
+                  label(for='exampleInputEmail1') نوع المراسلة
+                  select#exampleFormControlSelect2.form-control
+                    option طلب انضمام
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+
+                .form-group
+                  label(for='exampleInputPassword1') الموضوع
+                  input#exampleInputPassword1.form-control(type='text')
+                .form-group
+                  label(for='exampleInputPassword1') المحتوى
+                  textarea#exampleFormControlTextarea1.form-control(rows='3')
+
+                
+                button.btn.btn-master(type='submit') ارسال
+
+          .col-lg-6.col-sm-12
+            .social-media-box 
+              h4.text-center ابقى على تواصل معنا 
+              .social-media-groub 
+                a(href="" target="_blank")  
+                  img(src="./assets/image/facebook.png", alt="")
+                a(href="" target="_blank")  
+                  img(src="./assets/image/twitter.png", alt="")
+                a(href="" target="_blank")  
+                  img(src="./assets/image/telegram.png", alt="")
+                a(href="" target="_blank")  
+                  img(src="./assets/image/snapchat.png", alt="")
+              h5.text-center @tawaslbenalkhatab
+              .contact-info 
+                a(href="tel:+9635458545" title="+963 5458 545") 
+                  i.fas.fa-mobile-alt.fa-fw.fa-lg
+                  | +963   5458   545
+                a(href="mailto:support@tawaslbenalkhatab.com" title="support@tawaslbenalkhatab.com") 
+                  i.fas.fa-envelope-open-text.fa-fw.fa-lg
+                  | support@tawaslbenalkhatab.com
+
+
+
+    include includes/footer.pug
+    
+    //- script
+    include includes/script.pug

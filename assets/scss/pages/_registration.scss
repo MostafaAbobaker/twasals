@@ -1,0 +1,63 @@
+/* Start Registration Page */
+.registration-page {
+  background-color: #E5E5E5;
+  padding-bottom: 50px;
+  .image-logo {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    z-index: 3;
+    .container {
+      align-items: center;
+    }
+    .image {
+      width: 70px;
+      margin-inline-end: 10px;
+    }
+  }
+  .registration-box {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    h3 {
+      color: $mColor;
+      font-weight: 700;
+    }
+    
+    .form-group {
+      position: relative;
+      select {
+        padding-top: 0;
+      }
+      input:required {
+        & ~ .text-required {
+          color: #f00;
+          position: absolute;
+          top: 0;
+          left: 5px;
+        }
+      }
+      &.form-date-group::after{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f073";
+        position: absolute  ;
+        top: 55%;
+        right:5%;
+        z-index: 0;
+        color: #212529;
+        }
+      .form-date-control::-webkit-calendar-picker-indicator{
+        opacity:0;//removes awful triangle indicator
+        position: relative;
+        z-index: 2;
+        width:50%;
+        background-color: transparent;
+      }
+    }
+  }
+}
+/* End Registration Page */

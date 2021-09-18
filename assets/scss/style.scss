@@ -1,0 +1,184 @@
+$mColor: #29BB89;
+
+@import './Components/button';
+@import './Components/nav';
+@import './Components/article-card';
+@import './Components/model';
+@import './Components/footer';
+
+@import './pages/main-page';
+@import './pages/blog-info-page';
+@import './pages/login-page';
+@import './pages/test';
+@import './pages/tree';
+@import './pages/user';
+@import './pages/registration';
+@import './pages/help-page';
+@import './pages/contact-page';
+
+
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+html,body {
+  direction: rtl;
+  text-align: right;
+  /* font-size: 62.5%; */
+}
+
+body {
+  font-family: 'Almarai', sans-serif;
+  font-family: 'Cairo', sans-serif;
+  
+  /* background-color: #E5E5E5; */
+  /* font-size: 1.6rem; */
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* Start checkbox Bootstarp */
+.custom-control {
+  .custom-control-input {
+    &:active {
+      & ~ .custom-control-label {
+        &::before {
+          color: #fff;
+          background-color: #c9fbea;
+          border-color: #c9fbea;
+        }
+      }
+    }
+    &:focus {
+      & ~ .custom-control-label {
+        &::before {
+          border-color: $mColor;
+          box-shadow: 0 0 0 0.2rem rgba($mColor ,.25);
+        }
+      }
+    }
+    &:checked {
+      & ~ .custom-control-label {
+        &::before {
+          color: #fff;
+          border-color: $mColor;
+          background-color: $mColor;
+        }
+      }
+    }
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $mColor; 
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #14865e; 
+}
+
+/* Photo Uplaoad */
+.image-upload {
+  .avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 50px auto;
+  }
+  .avatar-upload .avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+  }
+  .avatar-upload .avatar-edit input {
+    display: none;
+  }
+  .avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .avatar-upload .avatar-edit input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+  }
+  .avatar-upload .avatar-edit input + label:after {
+    content: "\f030";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    color: $mColor;
+    
+  }
+  .avatar-upload .avatar-preview {
+    width: 192px;
+    height: 192px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid $mColor;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+}
+
+/* Input Date */
+.form-group  {
+  position: relative;
+  &.form-date-group::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f073";
+    position: absolute  ;
+    top: 55%;
+    right:5%;
+    z-index: 0;
+    color: #212529;
+    }
+  .form-date-control::-webkit-calendar-picker-indicator{
+    opacity:0;//removes awful triangle indicator
+    position: relative;
+    z-index: 2;
+    width:30%;
+    background-color: transparent;
+  }
+}

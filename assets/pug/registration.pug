@@ -1,0 +1,144 @@
+- var pageTitl = "Test";
+doctype html
+html(lang="ar")
+  head
+    include includes/head.pug
+  body
+    .registration-page
+      .image-logo 
+        .container.d-flex
+          .image 
+            img.w-100(src="./assets/image/tawasal.png", alt="")
+          h2 تواصل آل باحطاب
+      .container 
+        .registration-box
+          h3.text-center تسجيل انضمام للعائلة
+          .image-upload
+            .avatar-upload
+              .avatar-edit
+                input#imageUpload(type='file', accept='.png, .jpg, .jpeg')
+                label(for='imageUpload')
+              .avatar-preview
+                #imagePreview(style='background-image: url(./assets/image/anonymous-sec-whistleblower.jpg);')
+          h4 المعلومات الاساسية
+          .content-form 
+            .container-fluid 
+              .row 
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') بلد الإقامة
+                    select#exampleFormControlSelect1.form-control
+                      option المملكة العربيه السعودية
+                      option الإمارات العربية المتحدة
+                      option الكويت‎
+                      option البحرين
+                      option الأردن
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') المدينة
+                    select#exampleFormControlSelect1.form-control
+                      option جدة
+                      option الرياض
+                      option الدمام 
+                      option القصيم
+                      option المدينة
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') رقم الهوية  
+                    input#exampleInputEmail1.form-control(type='text', required)
+                    small.form-text.text-required *
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') الجنسية
+                    select#exampleFormControlSelect1.form-control
+                      option سعودى
+                      option امراتى 
+                      option 3
+                      option 4
+                      option 5
+                .col-lg-8.col-md-12.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') العنوان 
+                    input#exampleInputEmail1.form-control(type='text', )
+          h4 نوع الطلب
+          .content-form.my-3  
+            .form-check.form-check-inline
+              input#inlineRadio1.form-check-input(type='radio', name='inlineRadioOptions', value='option1')
+              label.form-check-label(for='inlineRadio1') باحطاب
+            .form-check.form-check-inline
+              input#inlineRadio2.form-check-input(type='radio', name='inlineRadioOptions', value='option2')
+              label.form-check-label(for='inlineRadio2') اخرى
+          .content-form 
+            .container-fluid 
+              .row 
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') الاسم الاول 
+                    input#exampleInputEmail1.form-control(type='text', required)
+                    small.form-text.text-required *
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') الاسم الثاني 
+                    input#exampleInputEmail1.form-control(type='text', required)
+                    small.form-text.text-required *
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') الاسم الثالث 
+                    input#exampleInputEmail1.form-control(type='text', required)
+                    small.form-text.text-required *
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') الاسم الرابع
+                    input#exampleInputEmail1.form-control(type='text', required)
+                    small.form-text.text-required *
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1')   (رقم هوية) الام او الزوجة 
+                    input#exampleInputEmail1.form-control(type='text', required)
+                    small.form-text.text-required *    
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') اسم العائلة 
+                    input#exampleInputEmail1.form-control(type='text', required)
+                    small.form-text.text-required *
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') البريد الالكتروني
+                    input#exampleInputEmail1.form-control(type='text', required)
+                    small.form-text.text-required *
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') النوع
+                    .form-group
+                      .form-check.form-check-inline
+                        input#Man.form-check-input(type='radio', name='Man', value='option1')
+                        label.form-check-label(for='Man') ذكر
+                      .form-check.form-check-inline
+                        input#woman.form-check-input(type='radio', name='woman', value='option2')
+                        label.form-check-label(for='woman') انثى
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group.form-date-group
+                    label(for='exampleInputEmail1') تاريخ الميلاد
+                    input#exampleInputEmail1.form-control.form-date-control(type='date', )
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') الحالة الاجتماعية
+                    select#exampleFormControlSelect1.form-control
+                      option أعزب
+                      option متزوج
+                      option مطلق 
+                      option أرمل
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') رقم الجوال
+                    input#exampleInputEmail1.form-control(type='text', )      
+                .col-lg-12.col-md-12.col-sm-12.my-3    
+                  .custom-control.custom-checkbox.form-group
+                    input#customControlAutosizingp.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='customControlAutosizingp') رجاء التاكد ان كل البيانات التي تم اضافته سليمه و صحيحه وعلى مسئوليتك الشخصيه واى خطاء فى البيانات سوف يعرضك للمسؤلية 
+                .col-lg-12.col-md-12.col-sm-12.d-flex.justify-content-end
+                  a.btn-master-outline(href="blog.html") ارسال
+                  
+
+    //- script
+    include includes/script.pug

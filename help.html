@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twasal</title>
+    <link rel="shortcut icon" href="./assets/image/twasalfavicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/image/twasalfavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container"> <a class="navbar-brand" href="blog.html"> <img src="./assets/image/twasalLogo.png" alt="">
+          <h5 class="text">تواصل آل باحطاب</h5></a>
+        <ul class="navbar-nav ml-auto">
+          <li class=" nav-item "><a class="nav-link" href="blog.html"><span class="icon"> <i class="fas fa-home fa-fw fa-lg"></i></span><span class="text">الرئيسية</span></a></li>
+          <li class=" nav-item "><a class="nav-link" href="tree.html"> <span class="icon"> <i class="fas fa-tree fa-fw fa-lg"> </i></span><span class="text">شجرة العائلة</span></a></li>
+          <li class="nav-item  active"><a class="nav-link" href="help.html"> <span class="icon"> <i class="fas fa-hands-helping fa-fw fa-lg"> </i></span><span class="text">طلب مساعدة</span></a></li>
+          <li class=" nav-item "><a class="nav-link" data-toggle="modal" data-target="#notificationModal"> <i class="far fa-bell fa-fw fa-lg"></i><span class="notification"> </span></a></li>
+          <li class=" nav-item "><a class="nav-link" href="user.html"> 
+              <!--img(src="./assets/image/Ellipse.png", alt="")--><i class="fas fa-user fa-fw fa-lg"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="help-page"> 
+      <div class="container"> 
+        <div class="help-box">
+          <h3 class="text-center">تقديم طلب مساعدة</h3>
+          <div class="row"> 
+            <div class="col-lg-12 col-md-12 col-sm-12"> 
+              <div class="form-group">
+                <label for="exampleInputEmail1">نوع الطلب</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>اختيارى</option>
+                  <option>الإمارات العربية المتحدة</option>
+                  <option>الكويت‎</option>
+                  <option>البحرين</option>
+                  <option>الأردن</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12"> 
+              <div class="content-form my-3"> 
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" id="inlineRadio1" type="radio" name="inlineRadioOptions" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">شخصي</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" id="inlineRadio2" type="radio" name="inlineRadioOptions" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">عن غيره</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12"> 
+              <div class="form-group">
+                <label for="exampleInputEmail1">افراد العائلة</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>ابن</option>
+                  <option>ابنه</option>
+                  <option>زوج</option>
+                  <option>زوجه</option>
+                  <option>اخ</option>
+                  <option>اخت</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12"> 
+              <div class="form-group">
+                <label for="exampleInputEmail1">نوعه</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>غزائى</option>
+                  <option>دراسى</option>
+                  <option>معيشى</option>
+                  <option>سكن</option>
+                  <option>انتقالات</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12"> 
+              <div class="form-group">
+                <label for="exampleInputEmail1">المرحلة</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>الجامعية</option>
+                  <option>دراسة</option>
+                  <option>الكويت‎</option>
+                  <option>البحرين</option>
+                  <option>الأردن</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12"> 
+              <div class="form-group">
+                <label for="exampleInputEmail1">التخصص </label>
+                <input class="form-control" id="exampleInputEmail1" type="text">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12"> 
+              <div class="form-group">
+                <label for="exampleInputEmail1">اسم المستفيد </label>
+                <input class="form-control" id="exampleInputEmail1" type="text">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12"> 
+              <div class="form-group">
+                <label for="exampleInputEmail1">رقم الجوال</label>
+                <input class="form-control" id="exampleInputEmail1" type="text">
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12"> 
+              <div class="form-group">
+                <label for="exampleInputEmail1">الطلب</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="وصف الطلب "></textarea>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12"> 
+              <div class="form-group">
+                <label for="exampleInputEmail1">المرفقات</label>
+              </div>
+              <div class="attachments">
+                <div class="conainer-fluid"> 
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 imgUp">
+                      <div class="imagePreview"></div>
+                      <label class="btn btn-primary">Upload
+                        <input class="uploadFile img" type="file" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                      </label>
+                    </div>
+                    <!-- col-2--><span class="imgAdd"><i class="fa fa-plus"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-end my-3"><a class="btn-master-outline" href="blog.html">ارسال</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal-->
+    <div class="modal fade notification-Modal" id="notificationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">الاشعارات</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="card-notifion"> 
+              <h6 class="card-title">طلب جديد </h6>
+              <div class="card-body"> 
+                <p> تم اضافة طلب انضمام جديد وسيتم اخبارك في اقرب وقت ممكن بعد انهاء الدعم من مراجعة طلبك , يمكنك مراجعة البيانات المدخلة من <a href="">هنا</a> او يمكنك<a href=""> التواصل </a>في حالة تريد اضافة معلومات اخرى </p><small class="date">1 يونيو , 2021 - 46:9 مساءً</small>
+              </div>
+            </div>
+            <div class="card-notifion"> 
+              <h6 class="card-title">طلب جديد </h6>
+              <div class="card-body"> 
+                <p> تم اضافة طلب انضمام جديد وسيتم اخبارك في اقرب وقت ممكن بعد انهاء الدعم من مراجعة طلبك , يمكنك مراجعة البيانات المدخلة من <a href="">هنا</a> او يمكنك<a href=""> التواصل </a>في حالة تريد اضافة معلومات اخرى </p><small class="date">1 يونيو , 2021 - 46:9 مساءً</small>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer"><a href="">رؤيه جميع الاشعارات</a></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <p>
+             جميع الحقوق محفوظة &copy; 2021 <i class="fa fa-value" aria-hidden="true">&nbsp;</i></p><a href="Contact.html">تواصل معنا</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/jquery-3.6.0.min.js"> </script>
+    <script src="./assets/js/popper.min.js"> </script>
+    <script src="./assets/js/bootstrap.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script>
+    <script src="./assets/js/main.js"> </script>
+  </body>
+</html>

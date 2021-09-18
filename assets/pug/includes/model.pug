@@ -1,0 +1,31 @@
+// Modal
+#notificationModal.modal.fade.notification-Modal(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .modal-header
+        h5#exampleModalLabel.modal-title الاشعارات
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        .card-notifion 
+          h6.card-title طلب جديد 
+          .card-body  
+            p  تم اضافة طلب انضمام جديد وسيتم اخبارك في اقرب وقت ممكن بعد انهاء الدعم من مراجعة طلبك , يمكنك مراجعة البيانات المدخلة من 
+              a(href="") هنا
+              |  او يمكنك
+              a(href="")  التواصل 
+              | في حالة تريد اضافة معلومات اخرى 
+            small.date 1 يونيو , 2021 - 46:9 مساءً
+        .card-notifion 
+          h6.card-title طلب جديد 
+          .card-body  
+            p  تم اضافة طلب انضمام جديد وسيتم اخبارك في اقرب وقت ممكن بعد انهاء الدعم من مراجعة طلبك , يمكنك مراجعة البيانات المدخلة من 
+              a(href="") هنا
+              |  او يمكنك
+              a(href="")  التواصل 
+              | في حالة تريد اضافة معلومات اخرى 
+            small.date 1 يونيو , 2021 - 46:9 مساءً
+
+
+      .modal-footer
+        a(href="") رؤيه جميع الاشعارات
