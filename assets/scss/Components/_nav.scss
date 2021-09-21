@@ -76,7 +76,7 @@ nav.navbar {
       position: fixed;
       background-color: #fff;
       box-shadow: 0 -2px 5px rgba(#000,0.1);
-      flex-direction: row-reverse;
+      flex-direction: row;
       bottom: 0;
       left: 0;
       width: 100%;
@@ -87,17 +87,17 @@ nav.navbar {
       border-radius: 10px 10px 0 0 ;
       li.nav-item {
         &:nth-child(1) {
-          order: 1;
+          /* order: 1; */
           .nav-link {
             font-size: 22px;
           }
         }
-        &:nth-child(2) {
+        /* &:nth-child(2) {
           order: 2;
         }
         &:nth-child(3) {
           order: 3;
-        }
+        } */
       }
     }
   }

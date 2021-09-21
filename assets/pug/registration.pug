@@ -89,23 +89,21 @@ html(lang="ar")
                 .col-lg-4.col-md-6.col-sm-12 
                   .form-group
                     label(for='exampleInputEmail1') الاسم الرابع
+                    input#exampleInputEmail1.form-control(type='text', )
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') اسم العائلة 
                     input#exampleInputEmail1.form-control(type='text', required)
-                    small.form-text.text-required *
+                    small.form-text.text-required *    
                 .col-lg-4.col-md-6.col-sm-12 
                   .form-group
                     label(for='exampleInputEmail1')   (رقم هوية) الام او الزوجة 
                     input#exampleInputEmail1.form-control(type='text', required)
                     small.form-text.text-required *    
                 .col-lg-4.col-md-6.col-sm-12 
-                  .form-group
-                    label(for='exampleInputEmail1') اسم العائلة 
-                    input#exampleInputEmail1.form-control(type='text', required)
-                    small.form-text.text-required *
-                .col-lg-4.col-md-6.col-sm-12 
-                  .form-group
-                    label(for='exampleInputEmail1') البريد الالكتروني
-                    input#exampleInputEmail1.form-control(type='text', required)
-                    small.form-text.text-required *
+                  .form-group.form-date-group
+                    label(for='exampleInputEmail1') تاريخ الميلاد
+                    input#exampleInputEmail1.form-control.form-date-control(type='date', )
                 .col-lg-4.col-md-6.col-sm-12 
                   .form-group
                     label(for='exampleInputEmail1') النوع
@@ -117,10 +115,6 @@ html(lang="ar")
                         input#woman.form-check-input(type='radio', name='woman', value='option2')
                         label.form-check-label(for='woman') انثى
                 .col-lg-4.col-md-6.col-sm-12 
-                  .form-group.form-date-group
-                    label(for='exampleInputEmail1') تاريخ الميلاد
-                    input#exampleInputEmail1.form-control.form-date-control(type='date', )
-                .col-lg-4.col-md-6.col-sm-12 
                   .form-group
                     label(for='exampleInputEmail1') الحالة الاجتماعية
                     select#exampleFormControlSelect1.form-control
@@ -131,11 +125,19 @@ html(lang="ar")
                 .col-lg-4.col-md-6.col-sm-12 
                   .form-group
                     label(for='exampleInputEmail1') رقم الجوال
-                    input#exampleInputEmail1.form-control(type='text', )      
+                    input#exampleInputEmail1.form-control(type='text', ) 
+                .col-lg-4.col-md-6.col-sm-12 
+                  .form-group
+                    label(for='exampleInputEmail1') البريد الالكتروني
+                    input#exampleInputEmail1.form-control(type='text', required)
+                    small.form-text.text-required *
+                
+                
+                     
                 .col-lg-12.col-md-12.col-sm-12.my-3    
                   .custom-control.custom-checkbox.form-group
                     input#customControlAutosizingp.custom-control-input(type='checkbox')
-                    label.custom-control-label(for='customControlAutosizingp') رجاء التاكد ان كل البيانات التي تم اضافته سليمه و صحيحه وعلى مسئوليتك الشخصيه واى خطاء فى البيانات سوف يعرضك للمسؤلية 
+                    label.custom-control-label(for='customControlAutosizingp') بالرجاء  التاكد من صحة جميع البيانات المدجلة حيث سيتم التواصل معك للتحقق من بعض المعلومات وسيتم تقعيل حسابك خلال 72 ساعة
                 .col-lg-12.col-md-12.col-sm-12.d-flex.justify-content-end
                   a.btn-master-outline(href="blog.html") ارسال
                   
